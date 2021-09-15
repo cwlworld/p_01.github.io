@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <style>
+    .btn{
+    border-width: 2px;
+}
+.fab{
+    font-size: 1.5rem;
+}
+.header-carousel-item{
+    height: 500px;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.bg-white1{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+}
+.bg-dark1{
+    background-color: rgba(54, 54, 54, 0.5);
+    padding: 3rem;
+}
+  </style>
+
+  <title>Aturst形象網站</title>
+</head>
+
+<body>
+  <div class="bg-secondary pt-1">
+    <div class="container d-flex justify-content-end">
+      <a href=""><i class="fab fa-facebook-square text-white me-2"></i></a>
+      <a href=""><i class="fab fa-linkedin text-white me-2"></i></a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bolder fs-3 text-danger" href="#">Atrust</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Thin Client</a></li>
+              <li><a class="dropdown-item" href="#">PC to Thin Client (P2T)</a></li>
+              <li><a class="dropdown-item" href="#">Mobile Thin Client</a></li>
+              <li><a class="dropdown-item" href="#">All-in-One Thin Client</a></li>
+              <li><a class="dropdown-item" href="#">Zero Client</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="#" class="btn btn-outline-danger me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          <a href="#" class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#registerModal">Sign In</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item header-carousel-item active bg-cover"
+          style="background-image: url(https://images.unsplash.com/photo-1542744174-7c97c32b00b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80);">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-2">Durable and Quiet Design</h5>
+            <p>Atrust thin client's efficiently thermal design not only eliminates the need for traditional fans, but
+              also increases system stability and extends product lifetime. The device also improves workplace quality
+              because of its noiseless design.</p>
+          </div>
+        </div>
+        <div class="carousel-item header-carousel-item bg-cover"
+          style="background-image: url(https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80);">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-2">Simplified Management</h5>
+            <p>ADM provides a centralized management tool to replace traditional method of configuring each PC. ADM
+              allows MIS staff to set different privilege levels for individual clients.</p>
+          </div>
+        </div>
+        <div class="carousel-item header-carousel-item bg-cover"
+          style="background-image: url(https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-2">Low Power Consumption</h5>
+            <p>Atrust thin client consumes minimal power in its idle state. Compared to normal desktop computers, it
+              saves a considerable amount of an enterprises' energy bill.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="bg-danger py-5 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 py-3">
+          <div><i class="fas fa-arrows-alt fa-3x my-2"></i></div>
+          <h3>Integrity</h3>
+          <p>Integrity is not only the most fundamental but also the most important ethical standard for all of our
+            employees. It is also our commitment to customers, employees, partners, stakeholders and society in general.
+          </p>
+        </div>
+        <div class="col-md-4 py-3">
+          <div><i class="fas fa-praying-hands fa-3x my-2"></i></div>
+          <h3>Quality</h3>
+          <p>Consistent delivery of the highest quality products is Atrust's promise to customers. Achieving the highest
+            quality is the foundation of our corporate policy.</p>
+        </div>
+        <div class="col-md-4 py-3">
+          <div><i class="fas fa-brain fa-3x my-2"></i></div>
+          <h3>Innovation</h3>
+          <p>Atrust will always strive to develop innovative technologies and produce worldclass products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-5 bg-light" style="position: relative;">
+    <div class="row">
+      <div class="col-lg-5 bg-cover"
+        style="
+        position: absolute; top:0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1590065707046-4fde65275b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1488&q=80);">
+      </div>
+    </div>
+    <div class="container" style="position: relative;">
+      <div class="row justify-content-end">
+        <div class="col-lg-7">
+          <div class="container bg-white1">
+            <h3>PC to Thin Client (P2T)</h3>
+            <p>Atrust P2T USB is a portable device that enables you to access cloud services, server-based computing
+              applications or virtual desktops via your existing PC estate. The size of it is no larger than a USB flash
+              drive. Simply insert it in, it will boot up and start. P2T USB integrated with Atrust Device Manager for
+              remote support, deployment and management.</p>
+            <a href="#" class="btn btn-outline-danger">More</a>
+            <div class="row mt-5">
+              <div class="col-6">
+                <h3>P2T Converter</h3>
+                <p>P2T Converter can help you extend the life cycle of your existing PC estate, and will also reduce the
+                  cost of IT Administration. Additionally, your computer will become a multifunction cloud client
+                  (called P2T thin client), suitable for a wide range of desktop virtualization environments.</p>
+              </div>
+              <div class="col-6">
+                <h3>P2T USB</h3>
+                <p>The P2T USB is a cost-effective solution for some organizations, such as: Educational institutions /
+                  Financial services and insurance companies / Retail stores / Government agencies / Healthcare centers
+                  / Call center agencies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  pb-5">
+      <h3 class="text-center my-5 fw-bold text-danger">Atrust Products</h3>
+      <div class="row">
+        <div class="col-md-6 d-flex my-3">
+          <div class="me-3"><i class="fas fa-server fa-2x text-danger"></i></div>
+          <div>
+            <h3>Server</h3>
+            <p>Atrust server delivers strong performance, reliability and availability at affordable price in a compact
+              and efficient design. Advanced features and functions include integrated on-board RAID and high-capacity
+              storage options for expansion possibilities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex my-3">
+          <div class="me-3"><i class="fas fa-laptop fa-2x text-danger"></i></div>
+          <div>
+            <h3>Mobile Thin Client</h3>
+            <p>Atrust mobile thin client is a Embedded OS based device especially designed for the mobile worker
+              client/server computing environment. Highly secure mobile thin client which stores all data and safe
+              accessed on remotely server. With the support of Citrix ICA/HDX, Microsoft RDP and VMware View.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 d-flex  my-3">
+          <div class="me-3"><i class="fas fa-desktop fa-2x text-danger"></i></div>
+          <div>
+            <h3>PCoIP Zero Client</h3>
+            <p>Atrust PCoIP All-in-One zero client based on Teradici PCoIP engine, it offers a rich computing experience
+              that supports high resolution, full frame rate 3D graphics, HD video and audio, and USB peripheral
+              connectivity. It delivers the hardware acceleration user experience to task workers in a truly
+              uncompromised computing environment.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex my-3">
+          <div class="me-3"><i class="fas fa-database fa-2x text-danger"></i></div>
+          <div>
+            <h3>Remote PC Array</h3>
+            <p>Designed on a physical PC for remote connection, no hypervisor is required. This will dramatically
+              shorten the cost of the infrastructure part as well as the design and construction period. It
+              significantly reduces the cost of the entire virtual desktop system and solves many challenges traditional
+              virtual desktops face.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-5 bg-light" style="position: relative;">
+    <div class="row justify-content-end">
+      <div class="col-lg-5 bg-cover"
+        style="
+        position: absolute; top:0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80);">
+      </div>
+    </div>
+    <div class="container" style="position: relative;">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="container bg-white1">
+            <h3 class="mb-3">Your Reliable Cloud Computing Partner</h3>
+            <P class="mb-4">Atrust is a creative, professional, and enthusiastic team which has rich experience in
+              designing, producing Thin Client, Zero Client, Server and Management Software. </P>
+            <dl class="row">
+              <dt class="col-sm-3">Quality Policy</dt>
+              <dd class="col-sm-9">Do the right things right at the first time /
+                To provide customer with reliable product and service /
+                It is every employee’s responsibility</dd>
+
+              <dt class="col-sm-3">Environment Policy</dt>
+              <dd class="col-sm-9">Comply with Environmental Law /
+                Support Environmental Protection /
+                Execute Energy Saving and Carbon Reduction /
+                Commit Permanent Living with the Earth</dd>
+
+              <dt class="col-sm-3">Respect</dt>
+              <dd class="col-sm-9">Atrust respects natural resources and customers by research and producing
+                environmental friendly products based on character-emphasized corporate culture.</dd>
+
+              <dt class="col-sm-3">Corporation Values</dt>
+              <dd class="col-sm-9">With our strategic alliance partners, Atrust provides complete solution and
+                world-class support for customers who evaluate, adopt and deploy cloud client computing architectures.
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3580440050914!2d121.35910095014312!3d25.055850983883417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7368cb5940b%3A0x61063bf48886be9d!2z5Yag5L-h6Zu76IWm6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1631664182698!5m2!1szh-TW!2stw"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="col-md-6">
+          <form action="" class="row g-3 needs-validation" novalidate>
+            <div class="form-group mb-3">
+              <label for="username">Name*</label>
+              <input type="text" class="form-control" id="username" placeholder="input your name" required>
+              <div class="invalid-feedback">
+                Please input your name.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="tel">TEL*</label>
+              <input type="tel" class="form-control" id="tel" placeholder="input your phone number" required>
+              <div class="invalid-feedback">
+                Please input your phone number.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" id="email" placeholder="input your email" required>
+              <div class="invalid-feedback">
+                Please input your email.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="exampleFormControlTextarea1">Your Request*</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              <div class="invalid-feedback">
+                Please input your request.
+              </div>
+            </div>
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-danger">Cancel</button>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="row">
+     <div class="col-md-6 p-5 text-white bg-cover" style="background-image: url(https://images.unsplash.com/photo-1483808161634-29aa1b0e585e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80);">
+       <div class="row">
+         <div class="container bg-dark1">
+          <small>Atrust mt188W</small>
+         <h3>The benefit of working from Home</h3>
+         <p>Atrust mt188W is a 15.6” Windows Embedded OS based mobile thin client device especially designed for the mobile worker client/server computing environment.</p>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-6 p-5 text-white bg-cover" style="background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);">
+      <div class="row">
+        <div class="container bg-dark1">
+         <small>Atrust t20</small>
+         <h3>Restaurant Display Controller</h3>
+         <p>Atrust t20 is a Windows® 10 IoT Enterprise OS based thin client. The Aspeed AST2500 BMC (Baseboard Management Controller) chip is also built in to help effective remote management on each t20 device.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid text-white text-center bg-danger py-3">© Atrust Computer Corp. All rights reserved.</div>
+  </footer>
+
+
+  <!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="********">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remenber my account
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Go to Sign in</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger text-white">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Security</h3>
+            <p>We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure, we have put in place suitable managerial procedures to safeguard and secure the information we collect online.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="container">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="********">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">confirm password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="********">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Agree to the terms
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login your account</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger text-white">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 註冊修正 -->
+
+
+<!-- form的驗證 -->
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
